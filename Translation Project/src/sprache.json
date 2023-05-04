@@ -1,0 +1,19 @@
+{
+    "languages": [
+        {
+            "languageName": "German",
+            "languagePrefix": "de",
+            "languageId": 1
+        },
+        {
+            "languageName": "English",
+            "languagePrefix": "en",
+            "languageId": 2
+        },
+        {
+            "languageName": "Arabisch",
+            "languagePrefix": "al",
+            "languageId": 3
+        }
+    ]
+}
