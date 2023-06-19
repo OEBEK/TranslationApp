@@ -1,6 +1,9 @@
 <script>
   import { getTranslation } from "./scripts/requets.js"
-  console.log(getTranslation("Ttes", "de", "en"))
+  
+  getTranslation("Ttes", "de", "en")
+  .then(x => x.json())
+  .then(data => console.log(data));
 </script>
 
 
