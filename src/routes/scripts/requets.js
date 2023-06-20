@@ -7,7 +7,17 @@ export function getTranslation(word, targetLanguage, sourceLanguage) {
       headers: {
         "Content-Type": "application/json",
       }
-    })
+    }).then(data => data.json())
+}
+
+export function getLanguages() {
+  return fetch(backendUrl + "/languages", {
+    method: "GET",
+    mode: "cors",
+    headers: {
+      "Content-Type": "application/json",
+    }
+  }).then(data => data.json())
 }
 
 // Call getTranslation with appropriate arguments
