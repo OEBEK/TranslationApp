@@ -25,20 +25,20 @@
 </script>
 
 <main class="p-4">
-  <h1 class="text-2xl font-bold mb-4">Haus</h1>
+  <h1 class="text-2xl font-bold mb-4">Translator</h1>
   <div class="mb-4">
     {#await languages}
       <p>Loading languages...</p>
     {:then langs} 
     <div class="flex flex-row justify-between gap-8 h-23">
       <label for="language" class="text-lg font-medium">Select a source language:</label>
-      <select id="language" class="w-full p-2 border border-gray-300 rounded" bind:value={selectedSourceLanguage}>
+      <select id="language" class="w-full p-2 border border-gray-300 rounded" bind:value={selectedTargetLanguage}>
         {#each langs as lang}
           <option value="{lang.langPrefix}">{lang.fullLang}</option>
         {/each}
       </select>
       <label for="language" class="text-lg font-medium">Select a target language:</label>
-      <select id="language" class="w-full p-2 border border-gray-300 rounded" bind:value={selectedTargetLanguage}>
+      <select id="language" class="w-full p-2 border border-gray-300 rounded" bind:value={selectedSourceLanguage}>
         {#each langs as lang}
           <option value="{lang.langPrefix}">{lang.fullLang}</option>
         {/each}
