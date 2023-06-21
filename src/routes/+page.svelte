@@ -63,7 +63,7 @@
      {#each translationResponse.hits as translation}
         {#each translation.roms as rom}
           {#each rom.arabs as arab}
-            <TranslationCard arab={arab}/>
+            <TranslationCard arab={arab} lang1={selectedSourceLanguage} lang2={selectedTargetLanguage}/>
          {/each}
         {/each}
      {/each}
